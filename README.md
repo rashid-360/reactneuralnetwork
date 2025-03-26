@@ -1,17 +1,17 @@
 # Handwritten Digit Recognition with React
 
-This project is a simple web application built with React that allows users to draw a digit (1-9) on a canvas and predicts the number using a pre-trained neural network.
+This project is a simple web application built with React that allows users to draw a digit (1-9) on a canvas and predicts the number using a pre-calculated neural network model.
 
 ## Features
 
 * **Interactive Canvas:** Draw digits directly on the canvas.
-* **MNIST Model:** Utilizes a neural network trained on the MNIST dataset.
-* **JSON Weights and Biases:** The model's weights and biases are stored in a JSON file.
-* **Digit Prediction:** Accurately predicts the drawn digit.
+* **Local Model:** Utilizes pre-calculated weights and biases stored in a JSON file.
+* **Direct Calculation:** Performs neural network calculations directly within the browser using the provided JSON data.
+* **Digit Prediction:** Accurately predicts the drawn digit based on the local model.
 
 ## How it Works
 
-The application loads the pre-trained model's weights and biases from a JSON file. When a user draws a digit on the canvas, the application processes the image and feeds it into the neural network. The network then outputs a prediction, which is displayed to the user.
+The application loads the pre-calculated model's weights and biases from a local JSON file. When a user draws a digit on the canvas, the application processes the image and performs the neural network calculations directly using the loaded data. The resulting prediction is then displayed to the user. No external neural network services are used.
 
 ![image](https://github.com/user-attachments/assets/b9fed4cd-1208-4af6-91a9-87ea33d152a0)
 
